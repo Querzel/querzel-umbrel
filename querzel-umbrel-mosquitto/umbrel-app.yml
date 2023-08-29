@@ -14,6 +14,7 @@ repo: https://mosquitto.org/
 support: https://mosquitto.org/
 port: 1883
 gallery:
+  - https://i.imgur.com/DNHGseE.png
 path: ""
 defaultPassword: ""
 releaseNotes: https://github.com/eclipse/mosquitto/
