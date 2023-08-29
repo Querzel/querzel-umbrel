@@ -13,6 +13,7 @@ dependencies: []
 repo: https://mosquitto.org/
 support: https://mosquitto.org/
 port: 1883
+gallery:
 path: ""
 defaultPassword: ""
 releaseNotes: https://github.com/eclipse/mosquitto/
