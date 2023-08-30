@@ -10,6 +10,6 @@ services:
     image: eclipse-mosquitto
     restart: unless-stopped
     volumes:
-      - ${APP_DATA_DIR}/config:/mosquitto/config
+      - ${APP_DATA_DIR}/config/mosquitto.conf:/mosquitto/config/mosquitto.conf
       - ${APP_DATA_DIR}/data:/mosquitto/data
       - ${APP_DATA_DIR}/log:/mosquitto/log
