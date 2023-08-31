@@ -4,10 +4,12 @@ services:
   app_proxy:
     environment:
       APP_HOST: querzel-umbrel-mosquitto_server_1
-      APP_PORT: 1883:1883
+      APP_PORT: 1883
 
   server:
     image: eclipse-mosquitto
+    network_mode: host
+    privileged: true
     restart: unless-stopped
     volumes:
       - ${APP_DATA_DIR}/config/mosquitto.conf:/mosquitto/config/mosquitto.conf
