@@ -1,18 +1,25 @@
 version: "3.7"
 
 services:
-  app_proxy:
-    environment:
-      APP_HOST: querzel-umbrel-mosquitto_server_1
-      APP_PORT: 1883:1883
-      PROXY_AUTH_ADD: "false"
+  #app_proxy:
+  #  environment:
+  #    APP_HOST: querzel-umbrel-mosquitto_server_1
+  #    APP_PORT: 1883
+  #    PROXY_AUTH_ADD: "false"
 
   server:
     image: eclipse-mosquitto
+    privileged: true
     restart: unless-stopped
+    hostname: "querzel-umbrel-mosquitto_server_1"
+    ports:
+      # MQTT
+      - 1883:1883/tcp
+      # Websocket
+      - 9001:9001/tcp
     volumes:
       - ${APP_DATA_DIR}/config/mosquitto.conf:/mosquitto/config/mosquitto.conf
       - ${APP_DATA_DIR}/data:/mosquitto/data
       - ${APP_DATA_DIR}/log:/mosquitto/log
-    environment:
-      PORT: 1883
+    #environment:
+    #  - WEB_PORT=1883
