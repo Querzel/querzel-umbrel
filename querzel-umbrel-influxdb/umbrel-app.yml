@@ -1,0 +1,21 @@
+manifestVersion: 1
+id: querzel-umbrel-influxdb
+name: influxdb
+category: Database
+version: "2.7.1"
+tagline: Self-hosted longterm noSQL db
+icon: https://raw.githubusercontent.com/docker-library/docs/43d87118415bb75d7bb107683e79cd6d69186f67/influxdb/logo.png
+description: InfluxDB is a time series database built from the ground up to handle high write and query loads. InfluxDB is meant to be used as a backing store for any use case involving large amounts of timestamped data, including DevOps monitoring, application metrics, IoT sensor data, and real-time analytics.
+developer: InfluxDB
+website: https://www.influxdata.com/
+dependencies: []
+repo: https://www.influxdata.com/
+support: https://www.influxdata.com/
+port: 8086
+gallery:
+  - https://images.squarespace-cdn.com/content/v1/6403432da91078458f6aeec2/1677938867409-5LZDWN1H4SSF8N6P9GJX/image-19.png
+path: ""
+defaultPassword: ""
+releaseNotes: https://hub.docker.com/_/influxdb
+submitter: querzel
+submission:

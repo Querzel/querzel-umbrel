@@ -1,0 +1,20 @@
+version: '3.7'
+
+services:
+  cgminer:
+    environment:
+      - POOL_USER
+    restart: always
+    build:
+      context: ./cgminer
+    ports:
+      - 4028:4028
+    privileged: true
+  web-monitor:
+    environment:
+      - API_HOST=cgminer
+    restart: always
+    build:
+      context: ./web
+    ports:
+      - 8080:8080

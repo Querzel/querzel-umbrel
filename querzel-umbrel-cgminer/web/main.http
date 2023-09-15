@@ -1,0 +1,9 @@
+GET http://localhost:8080/api/health
+
+###
+
+GET http://localhost:8080/api/health-cgminer
+
+###
+
+GET http://localhost:8080/
