@@ -11,7 +11,7 @@ website: https://www.influxdata.com/
 dependencies: []
 repo: https://www.influxdata.com/
 support: https://www.influxdata.com/
-port: 8086
+port: 9999
 gallery:
   - https://images.squarespace-cdn.com/content/v1/6403432da91078458f6aeec2/1677938867409-5LZDWN1H4SSF8N6P9GJX/image-19.png
 path: ""

@@ -7,12 +7,12 @@ services:
     ports:
       - "9999:9999"   # So we can access the WebUI
     environment:
-      - TZ=Europe/Brussels
+      - TZ=Europe/Berlin
       - DOCKER_INFLUXDB_INIT_MODE=setup
-      - DOCKER_INFLUXDB_INIT_USERNAME="hainfluxuser"
-      - DOCKER_INFLUXDB_INIT_PASSWORD="MyPassword"
-      - DOCKER_INFLUXDB_INIT_ORG="HA"
-      - DOCKER_INFLUXDB_INIT_BUCKET="homeassistant"
+      - DOCKER_INFLUXDB_INIT_USERNAME=hainfluxuser
+      - DOCKER_INFLUXDB_INIT_PASSWORD=MyPassword
+      - DOCKER_INFLUXDB_INIT_ORG=HA
+      - DOCKER_INFLUXDB_INIT_BUCKET=homeassistant
     volumes:
       - ${APP_DATA_DIR}/data:/var/lib/influxdb2
       - ${APP_DATA_DIR}/config:/etc/influxdb2
